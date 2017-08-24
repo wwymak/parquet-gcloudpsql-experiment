@@ -1,22 +1,5 @@
-# Simple demo to show where the mobile towers are
+# Simple demo to show publication usage logs
 
-Mini demo to show data around mobile cell towers in the uk. At the moment,
-it's pretty basic with an input for putting in coords, map showing data points and
-a table with the data.
-
-more ideas/ to do:
-------------------
-- lasso tool for selecting area of interest
-- make the querires more scalable (e.g. at the moment if you define too big an area it dumps tens of MB of data into the browser)
-(can do this via ajax datatables, only sending limited fields, possible backend map rendering)
-- more dataviz around e.g. which operator has most towers (from DB I know that it's EE)
-, confidences, and which towers have the most reported users -- presumably these are more 'important' then the very infrequently used ones?
-- where is your nearest tower? (with geolocation apis/ voronoi)
-- tweak tooltip? (perhaps with voronoi mouse event if possible...)
-- tweak map styling?
-- tidy up the file structure
-- look into experimenting with reactjs
-- error handling
 
 ## File structure
 ```
@@ -29,7 +12,7 @@ more ideas/ to do:
 ```
 
 ## Running instructions:
-1. save a copy of `pgConfig.example.js` as `pgCongig.js`, filling in the placeholder values with your database credentials
+1. save a copy of `pgConfig.example.js` as `pgConfig.js`, filling in the placeholder values with your database credentials
 2. run `npm install` in root directory
 3. run `node index.js` in root directory
 4. at this point node server should be running on port 3000
