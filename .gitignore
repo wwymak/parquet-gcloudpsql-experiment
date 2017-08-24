@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+.DS_Store
+node_modules
+pgConfig.js
+.idea
+config.*
+test-read.py
+data-explore.ipynb
+__pycache__
+data/
